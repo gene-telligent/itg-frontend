@@ -15,7 +15,7 @@ export default ({ simfileResults, isLoading }) => {
     )
   }
 
-  var rows = []
+  var rows = _.values(simfileResults);
   for (let [key, value] of Object.entries(simfileResults)) {
 
           rows.push(value)
